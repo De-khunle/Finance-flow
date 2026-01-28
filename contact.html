@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="navbar">
+          <nav class="main-nav">
+            <a href="#" class="hide"
+              ><img src="img/logo.png" alt="Logo of firm"
+            /></a>
+            <a href="#" class="mobile logo"
+              ><img src="img/mobile-logo.svg.png" alt="Logo of firm mobile"
+            /></a>
+            <div class="thin-line"></div>
+            <ul class="main-nav-list">
+              <li class="main-nav-link"><a href="index.html">HOME</a></li>
+              <li class="main-nav-link"><a href="about.html">ABOUT</a></li>
+              <li class="main-nav-link"><a href="pricing.html">PRICING</a></li>
+              <li class="main-nav-link"><a href="token.html">TOKENS</a></li>
+              <li class="main-nav-link"><a href="blog.html">BLOG</a></li>
+              <li class="main-nav-link">
+                <a href="contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="btn hide">DOWNLOAD APP</a>
+          <a href="#" class="mobile" onclick="showSidebar()"
+            ><img src="img/menu1.png" alt="Logo of firm"
+          /></a>
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- small screen logo image -->
+          <div class="micon-flex">
+            <div>
+              <!-- <a href="#" class="m-m"
+              ><img
+                src="img/mobile-logo.svg.png"
+                alt="Logo of crypto firm mobile"
+            /></a> -->
+            </div>
+            <div>
+              <a href="#" class="m-close" onclick="hideSidebar()"
+                ><img src="img/close.png" alt="close icon mobile"
+              /></a>
+            </div>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li class="main-nav-link"><a href="index.html">HOME</a></li>
+              <li class="main-nav-link"><a href="about.html">ABOUT</a></li>
+              <li class="main-nav-link"><a href="pricing.html">PRICING</a></li>
+              <li class="main-nav-link"><a href="token.html">TOKENS</a></li>
+              <li class="main-nav-link"><a href="blog.html">BLOG</a></li>
+              <li class="main-nav-link">
+                <a href="contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="btn hide">DOWNLOAD APP</a>
+        </div>
+      </header>
+      <section class="section-contact mg-btm-128">
+        <div class="section-contact-con container">
+          <div class="section-con-text">
+            <h1>Get in touch</h1>
+            <div class="grid-two-one">
+              <div>
+                <form action="#">
+                  <div class="form-div1">
+                    <div class="form-sub1">
+                      <label for="full-name">NAME</label>
+                      <input
+                        type="text"
+                        placeholder="Full Name"
+                        id="full-name"
+                      />
+                    </div>
+                    <div class="form-sub1">
+                      <label for="email">EMAIL</label>
+                      <input
+                        type="text"
+                        placeholder="email@example.com"
+                        id="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-div2">
+                    <div class="form-sub1">
+                      <label for="company">COMPANY</label>
+                      <input
+                        type="text"
+                        placeholder="Company Name"
+                        id="company"
+                      />
+                    </div>
+                    <div class="form-sub1">
+                      <label for="subject">SUBJECT</label>
+                      <input
+                        type="text"
+                        placeholder="How can we help you?"
+                        id="subject"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-div3">
+                    <div class="form-sub1">
+                      <label for="complaint">MESSAGE</label>
+                      <textarea
+                        name="message"
+                        id="complaint"
+                        placeholder="Your Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                </form>
+                <div>
+                  <a href="#" class="btn">SEND MESSAGE</a>
+                </div>
+              </div>
+              <div class="reach-part">
+                <h3>Want to reach us directly?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing .
+                  <br />
+                  numquam ipsam suscipit, sunt eveniet illum aut cum elit<br />
+                  eos! Non, recusandae incidunt!
+                </p>
+                <div class="micon-flex">
+                  <img src="img/message-icon.png" alt="message icon" />
+                  <p>contact@example.com</p>
+                </div>
+                <div class="micon-flex">
+                  <img src="img/message-icon.png" alt="message icon" />
+                  <p>support@example.com</p>
+                </div>
+                <div class="micon-flex">
+                  <img src="img/message-icon.png" alt="message icon" />
+                  <p>press@example.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="setion-faq mg-btm-128">
+        <div class="section-faq-con container">
+          <h1 class="section-faq-h">FAQ</h1>
+          <div class="section-faq-q">
+            <div>
+              <div class="q-flex">
+                <h3>Question 1</h3>
+                <img src="img/plus.png" alt="read more plus sign" />
+              </div>
+              <div class="wl"></div>
+            </div>
+            <div>
+              <div class="q-flex">
+                <h3>Question 2</h3>
+                <img src="img/minus.png" alt="close minus sign" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consecteur adipiscing elit. Id duis
+                pharetra elementum sit id sagittis non donec egestas
+              </p>
+              <div class="wl"></div>
+            </div>
+            <div>
+              <div class="q-flex">
+                <h3>Question 3</h3>
+                <img src="img/plus.png" alt="read more plus sign" />
+              </div>
+              <div class="wl"></div>
+            </div>
+            <div>
+              <div class="q-flex">
+                <h3>Question 4</h3>
+                <img src="img/plus.png" alt="read more plus sign" />
+              </div>
+              <div class="wl"></div>
+            </div>
+            <div>
+              <div class="q-flex">
+                <h3>Question 5</h3>
+                <img src="img/plus.png" alt="read more plus sign" />
+              </div>
+              <div class="wl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-logos">
+          <img src="img/logo.png" alt="" />
+          <div class="footer-l">
+            <img src="img/insta.png" alt="" />
+            <img src="img/facebook.png" alt="" />
+            <img src="img/linked in.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="section-menu">
+            <h3 class="mg-btm-16">MENU</h3>
+            <div class="footer-menu mg-btm-16"></div>
+            <div class="footer-links">
+              <div>
+                <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">PRICING</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">TOKENS</a></li>
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="section-dowload">
+            <div class="footer-card">
+              <h3 class="footer-heading mg-btm-16">DOWNLOAD OUR APPLICATION</h3>
+              <p class="footer-p mg-btm-16">
+                Lorem, ipsum dolor sit amet consectetur adipisicing <br />
+                elit. Et aliquid ipsam delectus fuga asperiores
+              </p>
+              <div class="footer-btn-con">
+                <div class="footer-btn">
+                  <a class="f-btn f-1" href="#">
+                    <img src="img/apple.png" alt="" />
+                    <span>APP STORE</span>
+                  </a>
+                </div>
+                <div class="footer-btn">
+                  <a class="f-btn" href="#">
+                    <img src="img/playstore.png" alt="" />
+                    <span>PLAY STORE</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">
+          <div class="c-c">
+            <p>All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

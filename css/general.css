@@ -1,0 +1,83 @@
+/* 
+01- TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* *::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
+
+html {
+  /* 10px/16px - Now multiples of 10 in rem */
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body {
+  height: 100%; /* Fallback for older browsers */
+}
+@supports (height: 100svh) {
+  html,
+  body {
+    height: 100svh;
+  }
+}
+
+body {
+  background-color: #050605;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+.mg-btm-24 {
+  margin-bottom: 2.4rem;
+}
+.mg-btm-32 {
+  margin-bottom: 3.2rem;
+}
+.mg-btm-48 {
+  margin-bottom: 4.8rem;
+}
+.mg-btm-64 {
+  margin-bottom: 6.4rem;
+}
+.mg-btm-128 {
+  margin-bottom: 12.8rem;
+}
+.mg-btm-16 {
+  margin-bottom: 1.6rem;
+}
+.mg-tp-48 {
+  margin-top: 4.8rem;
+}
+.mg-btm-256 {
+  margin-bottom: 25.6rem;
+}
+footer {
+  padding: 4.8rem 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}

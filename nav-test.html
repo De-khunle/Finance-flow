@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Nav test</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <nav class="main-nav">
+          <a href="#" class="hide"
+            ><img src="img/logo.png" alt="Logo of firm"
+          /></a>
+          <a href="#" class="mobile logo"
+            ><img src="img/mobile-logo.svg.png" alt="Logo of firm mobile"
+          /></a>
+          <div class="thin-line"></div>
+          <ul class="main-nav-list">
+            <li class="main-nav-link"><a href="index.html">HOME</a></li>
+            <li class="main-nav-link"><a href="about.html">ABOUT</a></li>
+            <li class="main-nav-link"><a href="pricing.html">PRICING</a></li>
+            <li class="main-nav-link"><a href="token.html">TOKENS</a></li>
+            <li class="main-nav-link"><a href="blog.html">BLOG</a></li>
+            <li class="main-nav-link"><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="btn hide">DOWNLOAD APP</a>
+        <a href="#" class="mobile" onclick="showSidebar()"
+          ><img src="img/menu1.png" alt="Logo of firm"
+        /></a>
+      </div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- small screen logo image -->
+        <div class="micon-flex">
+          <div>
+            <!-- <a href="#" class="m-m"
+              ><img
+                src="img/mobile-logo.svg.png"
+                alt="Logo of crypto firm mobile"
+            /></a> -->
+          </div>
+          <div>
+            <a href="#" class="m-close" onclick="hideSidebar()"
+              ><img src="img/close.png" alt="close icon mobile"
+            /></a>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-link"><a href="index.html">HOME</a></li>
+            <li class="main-nav-link"><a href="about.html">ABOUT</a></li>
+            <li class="main-nav-link"><a href="pricing.html">PRICING</a></li>
+            <li class="main-nav-link"><a href="token.html">TOKENS</a></li>
+            <li class="main-nav-link"><a href="blog.html">BLOG</a></li>
+            <li class="main-nav-link"><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="btn hide">DOWNLOAD APP</a>
+      </div>
+    </header>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
